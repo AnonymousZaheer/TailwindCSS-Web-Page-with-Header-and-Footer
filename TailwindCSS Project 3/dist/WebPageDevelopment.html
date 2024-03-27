@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <title>Web Page Development</title>
+    <script>
+        function myfunction() {
+            var x = document.getElementById("mylinks");
+            if (x.style.display === "flex"){
+                x.style.display = "none";
+            }
+            else{
+                x.style.display = "flex";
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-200">
+    <!-- Developing Nav BAR -->
+    <nav class="w-full h-14  bg-red-400 flex justify-between items-center px-5 ">
+        <div class="text-2xl text-black-400 font-bold">
+            Tailwind Skills
+        </div>
+        <ul class="md:flex font-semibold hidden gap-x-3">
+            <li class="cursor-pointer">Home</li>
+            <li class="cursor-pointer">About Us</li>
+            <li class="cursor-pointer">Contact Us</li>
+        </ul>
+        <div>
+            <button class="hidden md:block bg-black text-white text-base rounded-md hover:bg-slate-100 hover:text-black cursor-pointer p-2">
+                Get Started Now
+            </button>
+        </div>
+        <div class="md:hidden">
+            <a href="#" class="text-4xl" onclick="myfunction()">&#8801;</a>
+        </div>
+    </nav>
+    <div id="mylinks" class="bg-pink-200 hidden p-2">
+        <div class="w-1/2 m-auto">
+            <a href="" class="text-base font-semibold pr-2">Home</a>
+            <a href="" class="text-base font-semibold pr-2">About</a>
+            <a href="" class="text-base font-semibold pr-2">Contact</a>
+        </div>
+    </div>
+    <!-- Nav Bar Close-->
+    <div>
+        <div class="w-[90%] m-auto md:flex">
+            <div class="md:w-1/2 flex flex-col gap-y-4 justify-center pt-2 pb-2 md:pr-2">
+                <h1 class="text-black font-bold text-2xl md:text-5xl">The Industry Requires Advanced Skills.<br> <span class="text-blue-400"> Get It The Smart Way. </span></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam exercitationem enim harum commodi ullam qui laudantium quidem eveniet nihil provident, nisi nam, quibusdam iure aliquam alias corrupti accusamus dolore ab odit at aperiam cumque optio. A maiores delectus minima adipisci porro soluta reprehenderit suscipit! Expedita vitae qui optio ad exercitationem dolorem, minus magni voluptatem assumenda, voluptas hic perspiciatis at neque laborum, beatae unde maiores quae maxime aut! Nesciunt ut error libero, ipsa porro unde nobis natus labore doloremque reprehenderit modi sapiente in quam, tempora veritatis fuga ipsam perspiciatis officia. Doloremque molestias fugiat dolorem? Omnis quam, dolorum laboriosam saepe porro quos?</p>
+                <div>
+                    <button class="border-black border-2 hover:bg-black hover:border-black-400 text-base font-medium hover:text-white p-2 rounded-md">Get Start Today</button>
+                    <button class="border-blue-400 border-2 hover:bg-blue-400 hover:border-blue-400 text-base font-medium hover:text-white p-2 rounded-md">Schedule a Demo</button>
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <img class="hidden md:block" src="https://img.freepik.com/free-vector/designer-girl-concept-illustration_114360-4455.jpg?w=740&t=st=1711560308~exp=1711560908~hmac=47f3f1d0a6181821570bebf0983b6ad4db3c89f7e6868eb6ae547d576c4c3edc" alt="">
+            </div>
+        </div>
+        <div class="w-[90%] m-auto md:flex mt-10 mb-10">
+            <h2 class="w-full item-center text-center text-2xl md:text-3xl font-bold">Our <span class="text-red-400">Specialties</span></h2>
+        </div>
+        <div class="w-[90%] m-auto md:flex mt-10 mb-10 gap-y-4 md:gap-x-4">
+            <div class="md:w-[33.3%] bg-white rounded-md shadow-md p-3"><img src="https://images.pexels.com/photos/270637/pexels-photo-270637.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""><h1 class="text-xl font-semibold text-red-400">Specialty 1</h1> <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, facilis nobis culpa eligendi praesentium libero eveniet dicta doloremque eius accusamus, quasi voluptatum quam, neque quisquam!</p></div>
+            <div class="md:w-[33.3%] bg-white rounded-md shadow-md mt-2 mb-2 md:mt-0 md:mb-0 p-3"><img src="https://images.pexels.com/photos/262508/pexels-photo-262508.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""><h1 class="text-xl font-semibold text-red-400">Specialty 2</h1> <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, facilis nobis culpa eligendi praesentium libero eveniet dicta doloremque eius accusamus, quasi voluptatum quam, neque quisquam!</p></div>
+            <div class="md:w-[33.3%] bg-white rounded-md shadow-md p-3"><img src="https://images.pexels.com/photos/267401/pexels-photo-267401.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""><h1 class="text-xl font-semibold text-red-400">Specialty 3</h1> <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, facilis nobis culpa eligendi praesentium libero eveniet dicta doloremque eius accusamus, quasi voluptatum quam, neque quisquam!</p></div>
+        </div>
+    </div>
+    <div class="w-[90%] m-auto md:flex mt-10 mb-10">
+        <h2 class="w-full item-center text-center text-2xl md:text-3xl font-bold">Our <span class="text-red-400">Products</span></h2>
+    </div>
+    <div class="w-[90%] m-auto md:flex mt-10 mb-10 gap-y-4 md:gap-x-4">
+        <div class="md:w-[20%] hover:border-2 hover:border-red-400 bg-transparent rounded-md shadow-md p-3"><img class="rounded-md" src="https://images.pexels.com/photos/4499759/pexels-photo-4499759.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""><h1 class="text-[18px] font-semibold texxt-black text-center">Product 1</h1><p class="text-center text-[14px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ducimus reprehenderit ipsam veritatis iusto laborum dolorem esse a?</p> </div>
+        <div class="md:w-[20%] hover:border-2 hover:border-red-400 bg-transparent rounded-md shadow-md mt-2 mb-2 md:mt-0 md:mb-0 p-3"><img class="rounded-md" src="https://images.pexels.com/photos/4500661/pexels-photo-4500661.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""><h1 class="text-[18px] font-semibold texxt-black text-center">Product 2</h1><p class="text-center text-[14px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ducimus reprehenderit ipsam veritatis iusto laborum dolorem esse a?</p> </div>
+        <div class="md:w-[20%] hover:border-2 hover:border-red-400 bg-transparent rounded-md shadow-md p-3"><img class="rounded-md" src="https://images.pexels.com/photos/7619784/pexels-photo-7619784.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""><h1 class="text-[18px] font-semibold text-black text-center">Product 3</h1><p class="text-center text-[14px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ducimus reprehenderit ipsam veritatis iusto laborum dolorem esse a?</p> </div> 
+        <div class="md:w-[20%] hover:border-2 hover:border-red-400 bg-transparent rounded-md shadow-md mt-2 mb-2 md:mt-0 md:mb-0 p-3"><img class="rounded-md" src="https://images.pexels.com/photos/1093065/pexels-photo-1093065.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""><h1 class="text-[18px] font-semibold texxt-black text-center">Product 4</h1><p class="text-center text-[14px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ducimus reprehenderit ipsam veritatis iusto laborum dolorem esse a?</p> </div>
+        <div class="md:w-[20%] hover:border-2 hover:border-red-400 bg-transparent rounded-md shadow-md p-3"><img class="rounded-md" src="https://images.pexels.com/photos/1787236/pexels-photo-1787236.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""><h1 class="text-[18px]  font-semibold text-black text-center">Product 5</h1><p class="text-center text-[14px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ducimus reprehenderit ipsam veritatis iusto laborum dolorem esse a?</p> </div>
+    </div>
+    <!--Footer Section starts from here-->
+    <footer class="w-full bg-red-400 px-4 text-white pt-10 pb-10 flex flex-col gap-x-5 md:flex-row flex-wrap md:px-12 justify-center">
+        <div class="md:w-[25%]">
+            <img src="https://bellmedex.com/wp-content/uploads/2023/10/logo-05-05-1.svg" alt="">
+            <p class="md:mt-5 md:mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, quibusdam velit voluptatem consectetur iste nesciunt labore earum, nam doloribus repellat rem inventore sed mollitia saepe.</p>
+
+            <h3 class="font-bold text-base">Subscribe to Our Newsletter</h3>
+            <input type="text" class="pr-5 pl-5 pt-1 pb-1 rounded mt-3 mb-3" placeholder="Your email address">
+            <div class="flex gap-x-3"><input type="checkbox">Accept GDPR Terms</div>
+            <button class="bg-blue-400 pt-1 pb-1 pr-4 pl-4 font-medium rounded-md mt-2 hover:bg-black">Submit</button>
+        </div>
+        <div class="md:w-[21%] mt-4">
+            <h3 class="font-bold text-2xl md:mb-4">SERVICES</h3>
+            <ul>
+                <li>Medical Billing</li>
+                <li>Medical Coding</li>
+                <li>RCM</li>
+                <li>Medical Billing Audit</li>
+                <li>Clearing House</li>
+                <li>Credentialing</li>
+                <li>Healthcare SEO</li>
+            </ul>
+        </div>
+        <div class="md:w-[21%]">
+            <h3 class="font-bold text-2xl md:mb-4">SOFTWARE</h3>
+            <ul>
+                <li>Medifusion</li>
+                <li>FusionEDI</li>
+                <hr class="w-1/3 mt-3 mb-3 ">
+                <li>Free EHR</li>
+                <li>Free PMS</li>
+            </ul>
+        </div>
+        <div class="md:w-[21%]">
+            <h3 class="font-bold text-2xl md:mb-4">QUICK LINKS</h3>
+            <ul>
+                <li>About Us</li>
+                <li>Schedule a Demo</li>
+                <li>Testimonials</li>
+                <li>Contact Us</li>
+                <li>Jobs</li>
+            </ul>
+        </div>
+
+    </footer>
+</body>
+</html>
